@@ -1,0 +1,134 @@
+.circle {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: relative;
+
+    /* background-image: var(--circle-gradient);
+    color: #fff; */
+
+    /* box-shadow: 0px 10px 60px 0px rgb(220, 219, 219); */
+    /* border: 2px solid rgba(var(--circle-rgb),0.3); */
+    color: #fff;
+
+    /* box-shadow: inset 0px 0px 0px 2px rgb(var(--circle-rgb));
+    color: rgb(var(--circle-rgb)); */
+
+    font-weight: 100;
+    background: rgba(var(--circle-rgb), 1);
+}
+
+.circle:hover {
+    background-color: rgba(var(--circle-rgb), 0.8);
+    color: #fff;
+    cursor: pointer;
+}
+
+.circle.purple {
+    --circle-rgb: 165, 94, 234;
+    --circle-gradient: linear-gradient(#a2a6e8, #b485d5);
+}
+
+.circle.green {
+    --circle-rgb: 38, 222, 129;
+    --circle-gradient: linear-gradient(#78eed9, #52b7e8);
+}
+
+.circle.red {
+    --circle-rgb: 252, 92, 101;
+    --circle-gradient: linear-gradient(#ef72a7, #f25658);
+}
+
+.circle.blue {
+    --circle-rgb: 69, 170, 242;
+    --circle-gradient: linear-gradient(#71baeb, #5d6ce6);
+}
+
+.circle.yellow {
+    --circle-rgb: 254, 211, 48;
+    --circle-gradient: linear-gradient(#ffe15a, #ffb15f);
+}
+
+.circle.orange {
+    --circle-rgb: 253, 150, 68;
+    --circle-gradient: linear-gradient(#f3c16f, #f65f7f);
+}
+
+.circle.pink {
+    --circle-rgb: 237, 55, 159;
+    --circle-gradient: linear-gradient(#f2968c, #f568d9);
+}
+
+.circle.light-blue {
+    --circle-rgb: 2, 201, 255;
+    --circle-gradient: linear-gradient(#87cded, #7293e3);
+}
+
+.circle {
+    /* border: 1px solid #e48788;
+    padding: 1rem;
+    border-radius: 50%; */
+}
+
+/* blue-purple
+#6aa7f3
+#9c80f1
+
+teal-blue
+#78eed9
+#52b7e8
+
+orange-red
+#f3c16f
+#f65f7f
+
+purple-pink
+#bab7f1
+#f4accb
+
+yellow-orange
+#ffe15a
+#ffb15f
+
+pink-purple
+#e987b5
+#a66fea
+
+yellow-green
+#e4ef9a
+#5ef3b8
+
+blue-blue
+#71baeb
+#5d6ce6
+
+orange-pink
+#f2968c
+#f568d9
+
+teal-blue
+#99dcd7
+#869ffe
+
+teal-teal
+#b4f2ea
+#8bdbee
+
+light-blue-blue
+#87cded
+#7293e3
+
+light-green-green
+#e3eaa3
+#a5db7b
+
+purple-violet
+#a2a6e8
+#b485d5
+
+pink-red
+#ef72a7
+#f25658 */
