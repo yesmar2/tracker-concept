@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-//TODO(RBLAND): Update TransitionGroup to latest version.  Will need to use migration guide because it breaks animation.
-import TransitionGroup from "react-transition-group/TransitionGroup";
 import * as Animated from "animated/lib/targets/react-dom";
 import Circle from "components/Circle";
 import "./Grid.css";
@@ -51,7 +49,7 @@ class Grid extends Component {
         const { history } = this.props;
         return (
             <div className="grid-wrapper">
-                <TransitionGroup component="div" className="grid">
+                <div className="grid">
                     {this.state.circles.map((circle, index) => {
                         return (
                             <AnimatedCircle
@@ -74,7 +72,7 @@ class Grid extends Component {
                             />
                         );
                     })}
-                </TransitionGroup>
+                </div>
             </div>
         );
     }
