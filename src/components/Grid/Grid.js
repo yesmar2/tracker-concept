@@ -35,12 +35,7 @@ class Grid extends Component {
                 animations: circles.map(() => new Animated.Value(0))
             },
             () => {
-                Animated.stagger(
-                    150,
-                    this.state.animations.map(anim =>
-                        Animated.spring(anim, { toValue: 1 })
-                    )
-                ).start();
+                Animated.stagger(150, this.state.animations.map(anim => Animated.spring(anim, { toValue: 1 }))).start();
             }
         );
     }
@@ -66,6 +61,7 @@ class Grid extends Component {
                                             scale: this.state.animations[index]
                                         }
                                     ],
+                                    opacity: this.state.animations[index],
                                     height: "100%",
                                     width: "100%"
                                 }}
